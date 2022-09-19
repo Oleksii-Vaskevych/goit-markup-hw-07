@@ -952,7 +952,13 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-modal {
+.modal {
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-close {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1083,7 +1089,7 @@ textarea:focus {
   cursor: pointer;
 }
 
-.form-field textarea::placeholder {
+.modal__field textarea::placeholder {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
@@ -1091,13 +1097,7 @@ textarea:focus {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.modal {
-  padding: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -1110,7 +1110,7 @@ textarea:focus {
   margin-bottom: 12px;
 }
 
-.form-field {
+.modal__field {
   display: flex;
   flex-direction: column;
 
@@ -1119,7 +1119,7 @@ textarea:focus {
   border: none;
 }
 
-.form-input {
+.modal__input {
   padding: 11px 12px;
   padding-top: 11px;
   padding-right: 12px;
@@ -1138,7 +1138,7 @@ textarea:focus {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon {
+.modal__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -1149,29 +1149,29 @@ textarea:focus {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:hover + .modal-icon,
-.form-input:focus + .modal-icon {
+.modal__input:hover + .modal__icon,
+.modal__input:focus + .modal__icon {
   fill: var(--accent-color);
 }
 
-.form-input:hover,
-.form-input:focus {
+.modal__input:hover,
+.modal__input:focus {
   border: 1px solid #2196f3;
 }
 
-.input-wrap:hover > input {
+.modal__wrap:hover > input {
   border: 1px solid #2196f3;
 }
 
-.input-wrap:hover > svg {
+.modal__wrap:hover > svg {
   fill: var(--accent-color);
 }
 
-.form-label {
+.modal__label {
   margin-bottom: 4px;
 }
 
-.contract-label {
+.cotnract__label {
   display: flex;
   align-items: center;
   font-size: 14px;
@@ -1182,7 +1182,7 @@ textarea:focus {
   color: #757575;
 }
 
-.btn-modal-send.button {
+.modal__btn.button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -1204,16 +1204,16 @@ textarea:focus {
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-modal-send.button:hover,
-.btn-modal-send.button:focus {
+.modal__btn.button:hover,
+.modal__btn.button:focus {
   background: #188ce8;
 }
 
-.contract-link {
+.cotnract__link {
   color: #2196f3;
 }
 
-.form-field label {
+.modal__field label {
   font-size: 12px;
   line-height: 1.67;
 
@@ -1222,24 +1222,24 @@ textarea:focus {
   color: #757575;
 }
 
-.form-cotnract {
+.cotnract {
   margin-top: 20px;
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: 12px;
 }
 
-.form-send {
+.modal__send {
   display: flex;
   justify-content: center;
 }
 
-.input-wrap {
+.modal__wrap {
   position: relative;
   display: flex;
 }
 
-.modal-icon {
+.modal__icon {
   position: absolute;
   left: 12px;
   top: 50%;
@@ -1248,7 +1248,7 @@ textarea:focus {
 
 /*============== КАСТОМНИЙ ЧЕКБОКС ========== */
 
-.contract-label > span {
+.cotnract__label > span {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1264,7 +1264,7 @@ textarea:focus {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-btn:checked + .contract-label > span {
+.cotnract__checkbox:checked + .cotnract__label > span {
   background-color: var(--accent-color);
   border-color: transparent;
   fill: #ffffff;
