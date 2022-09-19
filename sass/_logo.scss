@@ -1,18 +1,24 @@
 .logo {
   padding-top: 24px;
   padding-bottom: 25px;
+
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
   letter-spacing: 0.03em;
   color: #000000;
 }
 
+// Хедер лого
+
 .title-logo {
   color: #2196f3;
 }
+
+// Футер лого
 
 footer .logo {
   color: #ffffff;
@@ -21,6 +27,7 @@ footer .logo {
 .page-footer__logo {
   display: flex;
   margin-bottom: 20px;
+
   padding: 0;
   margin-right: auto;
-}/*# sourceMappingURL=main.css.map */
+}
