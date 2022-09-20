@@ -7,12 +7,12 @@
     padding-left: 0;
 }
 
-.features__item:not(:last-child) {
-    margin-right: 30px;
-}
-
 .features__item {
     max-width: 270px;
+
+        &:not(:last-child) {
+         margin-right: 30px;
+         }
 }
 
 .features__name {
@@ -47,4 +47,3 @@
 
     color: var(--paragraph-text);
 }
-

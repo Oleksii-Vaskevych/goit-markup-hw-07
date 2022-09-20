@@ -10,20 +10,16 @@
 
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.backdrop.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-}
+    &.is-hidden {
+            opacity: 0;
+            pointer-events: none;
+            visibility: hidden;
 
-.backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(2);
-}
-
-.modal-section {
-padding: 0;
+            & .modal {
+             transform: translate(-50%, -50%) scale(2);
+            }
+        }
 }
 
 .modal {
@@ -49,12 +45,21 @@ padding: 0;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal__field textarea::placeholder {
+.modal__field {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+
+    border: none;
+
+    & textarea::placeholder {
     font-size: 12px;
     line-height: 1.67;
     letter-spacing: 0.01em;
-
+    
     color: rgba(117, 117, 117, 0.5);
+    }
 }
 
 .modal__title {
@@ -68,15 +73,6 @@ padding: 0;
 
     margin-top: 0;
     margin-bottom: 12px;
-}
-
-.modal__field {
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 10px;
-
-    border: none;
 }
 
 .modal__input {
@@ -96,6 +92,11 @@ padding: 0;
     border-radius: 4px;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    border: 1px solid #2196f3;
+    }
 }
 
 .modal__icon {
@@ -107,28 +108,11 @@ padding: 0;
     fill: #212121;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal__input:hover+.modal__icon,
-.modal__input:focus+.modal__icon {
+    .modal__input:hover+&,
+    .modal__input:focus+& {
     fill: var(--accent-color);
-}
-
-.modal__input:hover,
-.modal__input:focus {
-    border: 1px solid #2196f3;
-}
-
-.modal__wrap:hover>input {
-    border: 1px solid #2196f3;
-}
-
-.modal__wrap:hover>svg {
-    fill: var(--accent-color);
-}
-
-.modal__label {
-    margin-bottom: 4px;
+    }
 }
 
 textarea {
@@ -140,15 +124,16 @@ textarea {
     border-radius: 4px;
 
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-textarea:hover,
-textarea:focus {
+    &:hover,
+    &:focus {
     border: 1px solid #2196f3;
-    cursor: pointer;
+    }
 }
 
 .modal__label {
+    margin-bottom: 4px;
+
     font-size: 12px;
     line-height: 1.67;
 
@@ -165,13 +150,14 @@ textarea:focus {
 .modal__wrap {
     position: relative;
     display: flex;
-}
 
-.modal__icon {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
+    &:hover>input {
+    border: 1px solid #2196f3;
+    }
+    
+    &:hover>svg {
+    fill: var(--accent-color);
+    }
 }
 
 .cotnract__label {

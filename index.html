@@ -563,89 +563,81 @@
     </footer>
 
     <!-- МОДАЛЬНЕ ВІКНО -->
-    <section class="modal-section section">
-      <div class="backdrop is-hidden" data-modal>
-        <div role="group" class="modal-form">
-          <form class="modal form">
-            <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
 
-            <div class="modal__field">
-              <label class="modal__label" for="name">Ім'я</label>
-              <div class="modal__wrap">
-                <input class="modal__input" type="text" name="name" id="name" />
-                <svg class="modal__icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-person-black"></use>
-                </svg>
-              </div>
-            </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div role="group" class="modal-form">
+        <form class="modal form">
+          <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
 
-            <div class="modal__field">
-              <label class="modal__label" for="tel">Телефон</label>
-              <div class="modal__wrap">
-                <input class="modal__input" type="tel" name="tel" id="tel" />
-                <svg class="modal__icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-phone-black"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="modal__field">
-              <label class="modal__label" for="mail">Пошта</label>
-              <div class="modal__wrap">
-                <input
-                  class="modal__input"
-                  type="email"
-                  name="mail"
-                  id="mail"
-                />
-                <svg class="modal__icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-email-black"></use>
-                </svg>
-              </div>
-            </div>
-
-            <div class="modal__field">
-              <label class="modal__label" for="coment">Коментар</label>
-              <textarea
-                name="coment"
-                id="coment"
-                rows="6"
-                placeholder="Введіть текст"
-              ></textarea>
-            </div>
-
-            <div class="cotnract">
-              <input
-                class="cotnract__checkbox visually-hidden"
-                type="checkbox"
-                name="contract"
-                id="contract"
-              />
-              <label class="cotnract__label" for="contract">
-                <span>
-                  <svg class="cotnract__icon" width="16" height="15">
-                    <use href="./images/icons.svg#icon-Vector-check"></use></svg
-                ></span>
-                Погоджуюся з розсилкою та приймаю
-                <a href="" class="cotnract__link">Умови договору</a></label
-              >
-            </div>
-
-            <div class="modal__send">
-              <button type="submit" class="modal__btn button">
-                Відправити
-              </button>
-            </div>
-
-            <button class="btn-close" data-modal-close>
-              <svg class="btn-close__icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-close"></use>
+          <div class="modal__field">
+            <label class="modal__label" for="name">Ім'я</label>
+            <div class="modal__wrap">
+              <input class="modal__input" type="text" name="name" id="name" />
+              <svg class="modal__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
-            </button>
-          </form>
-        </div>
+            </div>
+          </div>
+
+          <div class="modal__field">
+            <label class="modal__label" for="tel">Телефон</label>
+            <div class="modal__wrap">
+              <input class="modal__input" type="tel" name="tel" id="tel" />
+              <svg class="modal__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal__field">
+            <label class="modal__label" for="mail">Пошта</label>
+            <div class="modal__wrap">
+              <input class="modal__input" type="email" name="mail" id="mail" />
+              <svg class="modal__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal__field">
+            <label class="modal__label" for="coment">Коментар</label>
+            <textarea
+              name="coment"
+              id="coment"
+              rows="6"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+
+          <div class="cotnract">
+            <input
+              class="cotnract__checkbox visually-hidden"
+              type="checkbox"
+              name="contract"
+              id="contract"
+            />
+            <label class="cotnract__label" for="contract">
+              <span>
+                <svg class="cotnract__icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-Vector-check"></use></svg
+              ></span>
+              Погоджуюся з розсилкою та приймаю
+              <a href="" class="cotnract__link">Умови договору</a></label
+            >
+          </div>
+
+          <div class="modal__send">
+            <button type="submit" class="modal__btn button">Відправити</button>
+          </div>
+
+          <button class="btn-close" data-modal-close>
+            <svg class="btn-close__icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </form>
       </div>
-    </section>
+    </div>
 
     <script src="./js/modal.js"></script>
   </body>
