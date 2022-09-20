@@ -51,7 +51,23 @@ ul {
   margin: -1px;
 }
 
-/*------------- ХЕДЕР -------------*/
+a {
+  font-family: inherit;
+  outline: none;
+}
+
+a.link {
+  color: var(--primari-text-color);
+}
+
+.link {
+  text-decoration: none;
+  display: block;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .container {
   display: block;
@@ -62,6 +78,22 @@ ul {
   width: 1200px;
   /* outline: 3px solid red; */
 }
+
+ul {
+  list-style: none;
+  font-style: normal;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+img {
+  display: block;
+}
+
+/*------------- ХЕДЕР -------------*/
 
 .page-header__navigate {
   display: flex;
@@ -101,24 +133,6 @@ ul {
 
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
-}
-
-a {
-  font-family: inherit;
-  outline: none;
-}
-
-a.link {
-  color: var(--primari-text-color);
-}
-
-.link {
-  text-decoration: none;
-  display: block;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .link {
@@ -174,20 +188,6 @@ a.link {
   border-radius: 2px;
 }
 
-ul {
-  list-style: none;
-  font-style: normal;
-}
-
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
-
-img {
-  display: block;
-}
-
 .site-contacts__link {
   display: flex;
   align-items: center;
@@ -205,6 +205,7 @@ img {
 
 .site-contacts__link.link:hover,
 .site-contacts__link.link:focus {
+  color: var(--accent-color);
   fill: var(--accent-color);
 }
 
