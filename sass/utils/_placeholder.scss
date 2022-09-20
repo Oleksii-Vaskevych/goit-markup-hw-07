@@ -1,0 +1,31 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    /* outline: 2px solid tomato; */
+    max-width: 1600px;
+}
+
+.link {
+    text-decoration: none;
+    display: block;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    /* outline: 3px solid red; */
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+

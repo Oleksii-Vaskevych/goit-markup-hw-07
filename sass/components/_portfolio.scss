@@ -1,0 +1,19 @@
+.portfolio__title {
+    color: var(--primari-bcg-color);
+}
+
+.portfolio__nav {
+    display: flex;
+    justify-content: center;
+
+    padding-left: 0;
+    margin-bottom: 50px;
+}
+
+.portfolio__item {
+    margin-right: 8px;
+}
+
+.portfolio__item:nth-child(5n) {
+    margin-right: 0;
+}
